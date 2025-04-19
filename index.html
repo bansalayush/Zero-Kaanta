@@ -4,7 +4,7 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Neon Tic Tac Toe</title>
+<title>Tic Tac Toe</title>
 <style>
 :root {
 --dark-background: #121212;
@@ -63,7 +63,45 @@ margin-bottom: 2rem;
 display: grid;
 grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
 gap: 2rem;
-padding: 4rem 0;
+padding: 2rem 0;
+}
+
+.screenshots {
+padding: 2rem 0;
+text-align: center;
+}
+
+.screenshot-grid {
+display: grid;
+grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+gap: 2rem;
+margin: 0 auto;
+max-width: 800px;
+}
+
+.screenshot {
+position: relative;
+border-radius: 12px;
+overflow: hidden;
+border: 1px solid var(--border-color);
+transition: transform 0.3s ease, box-shadow 0.3s ease;
+width: 100%;
+max-width: 300px;
+margin: 0 auto;
+aspect-ratio: 9/16;
+}
+
+.screenshot:hover {
+transform: translateY(-5px);
+box-shadow: 0 0 30px rgba(0, 180, 216, 0.2);
+}
+
+.screenshot img {
+width: 100%;
+height: 115%;
+display: block;
+object-fit: cover;
+object-position: top;
 }
 
 .feature {
@@ -149,6 +187,17 @@ grid-template-columns: 1fr;
 </header>
 
 <main class="container">
+<section class="screenshots">
+<div class="screenshot-grid">
+<div class="screenshot">
+<img src="zero-kaanta-1.png" alt="Tic Tac Toe Gameplay Screenshot 1">
+</div>
+<div class="screenshot">
+<img src="zero-kaanta-2.png" alt="Tic Tac Toe Gameplay Screenshot 2">
+</div>
+</div>
+</section>
+
 <section class="features">
 <div class="feature">
 <h3>Modern Design</h3>
